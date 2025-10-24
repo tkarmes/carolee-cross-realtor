@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.hero {
+    background: url('assets/images/carolee.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #8B6F47; /* Earthy beige fallback */
+}
+.hero h1 {
+    font-size: 2.5rem;
+    color: #FFF8E7; /* Light beige */
+}
+.hero p {
+    font-size: 1.2rem;
+    color: #E8D5B5; /* Soft earthy cream */
+}
+.btn-primary {
+    background-color: #4A7043; /* Earthy green */
+    border-color: #4A7043;
+}
+.btn-primary:hover {
+    background-color: #3A5A34; /* Darker green */
+}
