@@ -27,3 +27,9 @@ body {
 .btn-primary:hover {
     background-color: #3A5A34; /* Darker green */
 }
+#about, #contact {
+    background-color: #FFF8E7; /* Light beige */
+}
+#listings {
+    background-color: #E8D5B5; /* Soft earthy cream */
+}

@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/Logo Banner 2 (500 x 200 px).png" alt="Carolee Cross Logo" height="40">
@@ -36,6 +36,71 @@
             <a href="#contact" class="btn btn-primary">Get in Touch</a>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/Headshot blue gradient 4x5 300dpi.jpg" alt="Carolee Cross" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h2>About Carolee Cross</h2>
+                    <p>Carolee Cross is a dedicated realtor with years of experience helping clients find their perfect homes in [Your City]. With a passion for real estate and a commitment to personalized service, Carolee ensures every client feels confident and supported throughout their home-buying or selling journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listings Placeholder Section -->
+    <section id="listings" class="py-5 bg-light">
+        <div class="container">
+            <h2>Property Listings</h2>
+            <p>Coming soon! Check back for the latest properties available with Carolee Cross.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Ready to start your real estate journey? Contact Carolee today!</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> [carolee@example.com]</li>
+                        <li><strong>Phone:</strong> [555-123-4567]</li>
+                        <li><strong>Follow:</strong> <a href="[Your Social Media Link]">Social Media</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center">
+        <div class="container">
+            <img src="assets/images/Your Trusted Real Estate Partners logo.jpg" alt="Trusted Partners Logo" height="30" class="mb-2">
+            <p>&copy; 2025 Carolee Cross, Realtor. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
