@@ -8,25 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/Logo Banner 2 (500 x 200 px).png" alt="Carolee Cross Logo" height="45">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#listings">Listings</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/Logo Banner 2 (500 x 200 px).png" alt="Carolee Cross Logo" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#listings">Listings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -42,17 +43,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img src="assets/images/Headshot blue gradient 4x5 300dpi.jpg" alt="Carolee Cross" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+                    <img src="assets/images/Headshot blue gradient 4x5 300dpi.jpg"
+                         alt="Carolee Cross"
+                         class="img-fluid rounded-circle mb-3"
+                         style="max-width: 200px;">
                 </div>
                 <div class="col-md-8">
                     <h2>About Carolee Cross</h2>
-                    <p>Carolee Cross is a dedicated realtor with years of experience helping clients find their perfect homes in Northeast Texas. With a passion for real estate and a commitment to personalized service, Carolee ensures every client feels confident and supported throughout their home-buying or selling journey.</p>
+                    <p>Carolee Cross is a dedicated realtor with years of experience helping clients
+                       find their perfect homes in Northeast Texas. With a passion for real estate
+                       and a commitment to personalized service, Carolee ensures every client feels
+                       confident and supported throughout their home-buying or selling journey.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Listings Placeholder Section -->
+    <!-- Listings Placeholder -->
     <section id="listings" class="py-5 bg-light">
         <div class="container">
             <h2>Property Listings</h2>
@@ -60,35 +67,48 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section – Copy-to-Clipboard -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2>Contact Me</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Ready to start your real estate journey? Contact Carolee today!</p>
-                    <ul class="list-unstyled">
-                        <li><strong>Email:</strong> [carolee@example.com]</li>
-                        <li><strong>Phone:</strong> [555-123-4567]</li>
-                        <li><strong>Follow:</strong> <a href="[Your Social Media Link]">Social Media</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-card p-4 bg-white rounded shadow-sm">
+
+                        <!-- Phone -->
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>Phone:</strong><br>
+                                    <span class="contact-value">214-726-6661</span>
+                                </div>
+                                <button class="btn btn-outline-primary btn-sm copy-btn"
+                                        data-clipboard-text="214-726-6661">
+                                    Copy
+                                </button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    <span class="contact-value">carolee@caroleecross.com</span>
+                                </div>
+                                <button class="btn btn-outline-primary btn-sm copy-btn"
+                                        data-clipboard-text="carolee@caroleecross.com">
+                                    Copy
+                                </button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+
+                        <div class="text-center mt-4">
+                            <p class="text-muted small">
+                                Click any “Copy” button to copy to clipboard
+                            </p>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,12 +117,62 @@
     <!-- Footer -->
     <footer class="py-3 bg-dark text-white text-center">
         <div class="container">
-            <img src="assets/images/Your Trusted Real Estate Partners logo.jpg" alt="Trusted Partners Logo" height="30" class="mb-2">
+            <img src="assets/images/Your Trusted Real Estate Partners logo.jpg"
+                 alt="Trusted Partners Logo" height="30" class="mb-2">
             <p>&copy; 2025 Carolee Cross, Realtor. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS (must be before custom scripts) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optional script.js (keep if you have one) -->
     <script src="script.js"></script>
+
+    <!-- Copy-to-Clipboard – Works on Live Server -->
+    <script>
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const text = this.getAttribute('data-clipboard-text');
+            const original = this.textContent;
+
+            // Modern API (Live Server = secure context)
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showCopied(this, original);
+                }).catch(() => fallbackCopy(text, this, original));
+            } else {
+                fallbackCopy(text, this, original);
+            }
+        });
+    });
+
+    function showCopied(btn, original) {
+        btn.textContent = 'Copied!';
+        btn.classList.add('btn-success');
+        setTimeout(() => {
+            btn.textContent = original;
+            btn.classList.remove('btn-success');
+        }, 2000);
+    }
+
+    function fallbackCopy(text, btn, original) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try {
+            const ok = document.execCommand('copy');
+            if (ok) showCopied(btn, original);
+            else alert('Copy failed – select and copy manually: ' + text);
+        } catch (e) {
+            alert('Copy failed – select and copy manually: ' + text);
+        }
+        document.body.removeChild(ta);
+    }
+    </script>
 </body>
 </html>
