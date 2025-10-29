@@ -1,70 +1,105 @@
+/* -------------------------------------------------
+   GLOBAL
+   ------------------------------------------------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
-/* HERO SECTION - Sunset over lake */
+/* -------------------------------------------------
+   NAVBAR – BLACK like the footer
+   ------------------------------------------------- */
+.navbar {
+    background-color: #000 !important;   /* solid black */
+    padding: 0.75rem 1rem;
+}
+.navbar .navbar-brand img {
+    height: 45px;                        /* a little bigger logo */
+}
+.navbar .nav-link {
+    color: #fff !important;              /* white text */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: #FFD700 !important;           /* bright yellow on hover */
+}
+
+/* -------------------------------------------------
+   HERO – Sunset lake + stronger pop-out text
+   ------------------------------------------------- */
 .hero {
     background: url('assets/images/Sunset edit-100.jpg') no-repeat center center;
     background-size: cover;
-    height: 50vh; /* Increased for dramatic sunset */
+    height: 55vh;                        /* taller for drama */
     display: flex;
     align-items: center;
     text-align: center;
     position: relative;
-    background-color: #8B6F47; /* Fallback */
+    background-color: #8B6F47;           /* fallback */
 }
 
-/* Dark overlay for text readability */
+/* Dark overlay – makes text stand out */
 .hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45); /* Slightly stronger for sunset */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);      /* a bit darker for sunset */
     z-index: 1;
 }
 
-/* Keep text above overlay */
+/* Text sits above overlay */
 .hero .container {
     position: relative;
     z-index: 2;
 }
 
-/* Hero text - warm, glowing, readable */
+/* BIG, BOLD, GLOWING TEXT */
 .hero h1 {
-    font-size: 2.8rem;
-    color: #FFCA80; /* Light orange - matches sunset */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-    font-weight: bold;
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #FFCA80;                      /* warm orange */
+    text-shadow: 4px 4px 12px rgba(0,0,0,0.9);
+    letter-spacing: 1px;
 }
-
 .hero p {
-    font-size: 1.3rem;
-    color: #FFE4B5; /* Light peach - soft glow */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    font-size: 1.4rem;
+    color: #FFE4B5;                      /* soft peach */
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
+    margin-bottom: 1.5rem;
 }
 
-/* Buttons */
-.btn-primary {
-    background-color: #4A7043; /* Earthy green */
+/* GET IN TOUCH button */
+.hero .btn-primary {
+    background-color: #4A7043;
     border-color: #4A7043;
-    padding: 0.75rem 1.5rem;
+    padding: 0.9rem 2rem;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+.hero .btn-primary:hover {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #000;
 }
 
-.btn-primary:hover {
-    background-color: #3A5A34;
-    border-color: #3A5A34;
-}
-
-/* Section backgrounds */
+/* -------------------------------------------------
+   SECTION BACKGROUNDS
+   ------------------------------------------------- */
 #about, #contact {
-    background-color: #FFF8E7; /* Light beige */
+    background-color: #FFF8E7;
+}
+#listings {
+    background-color: #E8D5B5;
 }
 
-#listings {
-    background-color: #E8D5B5; /* Soft cream */
+/* -------------------------------------------------
+   FOOTER (already black – just in case)
+   ------------------------------------------------- */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
 }
