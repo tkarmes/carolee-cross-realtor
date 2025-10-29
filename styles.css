@@ -2,34 +2,69 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
+
+/* HERO SECTION - Sunset over lake */
 .hero {
-    background: url('assets/images/Carolee200tighter crop.jpg') no-repeat center center/cover;
-    height: 50vh;
+    background: url('assets/images/Sunset edit-100.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh; /* Increased for dramatic sunset */
     display: flex;
     align-items: center;
-    color: #fff;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: #8B6F47; /* Earthy beige fallback */
+    position: relative;
+    background-color: #8B6F47; /* Fallback */
 }
+
+/* Dark overlay for text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* Slightly stronger for sunset */
+    z-index: 1;
+}
+
+/* Keep text above overlay */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero text - warm, glowing, readable */
 .hero h1 {
-    font-size: 2.5rem;
-    color: #FFF8E7; /* Light beige */
+    font-size: 2.8rem;
+    color: #FFCA80; /* Light orange - matches sunset */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
+
 .hero p {
-    font-size: 1.2rem;
-    color: #E8D5B5; /* Soft earthy cream */
+    font-size: 1.3rem;
+    color: #FFE4B5; /* Light peach - soft glow */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
+
+/* Buttons */
 .btn-primary {
     background-color: #4A7043; /* Earthy green */
     border-color: #4A7043;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
 }
+
 .btn-primary:hover {
-    background-color: #3A5A34; /* Darker green */
+    background-color: #3A5A34;
+    border-color: #3A5A34;
 }
+
+/* Section backgrounds */
 #about, #contact {
     background-color: #FFF8E7; /* Light beige */
 }
+
 #listings {
-    background-color: #E8D5B5; /* Soft earthy cream */
+    background-color: #E8D5B5; /* Soft cream */
 }
